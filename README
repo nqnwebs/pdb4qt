@@ -1,0 +1,17 @@
+Set a tracepoint in the Python debugger that works with Qt
+
+It uses ipdb if is available
+
+Usage
+-----
+
+::
+
+  >>> import pdb4qt;pdb4qt.set_trace()
+
+
+Credits
+-------
+
+http://stackoverflow.com/questions/1736015/debugging-a-pyqt4-app
+
