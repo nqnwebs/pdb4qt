@@ -8,7 +8,7 @@ from setuptools import setup
 
 setup(
     name='pdb4qt',
-    version='0.1',
+    version='0.2',
     description=u'A set_trace() that works with PyQt4',
     long_description=__doc__,
     author = u'Martín Gaitán',
