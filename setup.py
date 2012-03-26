@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-with open('README') as readme:
+with open('README.rst') as readme:
     __doc__ = readme.read()
 
 from setuptools import setup
