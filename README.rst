@@ -24,7 +24,7 @@ Usage
 Simply import ``set_trace`` from ``pdb4qt`` and call it where you want
 to do the breakpoint::
 
-    from ipdb import set_trace; set_trace()
+    from pdb4qt import set_trace; set_trace()
 
 Why it's needed?
 ----------------
