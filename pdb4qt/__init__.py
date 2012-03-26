@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import sys
 
-def set_trace():
+
+def set_trace(frame=None):
     '''
     Set a tracepoint in the Python debugger that works with Qt
     Taken from:
@@ -9,8 +11,10 @@ def set_trace():
     '''
     from PyQt4.QtCore import pyqtRemoveInputHook
     try:
-        import ipdb as pdb
+        from ipdb import set_trace
     except ImportError:
-	import pdb
+        from pdb import set_trace
     pyqtRemoveInputHook()
-    pdb.set_trace()
+    if frame is None:
+        frame = sys._getframe().f_back
+    return set_trace(frame)
